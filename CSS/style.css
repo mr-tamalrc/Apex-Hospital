@@ -1,0 +1,91 @@
+body {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.header-container {
+	width: 100%;
+	margin: 0;
+}
+
+.header {
+	text-align: center;
+	color: white;
+	background-color: cadetblue;
+	padding: 20px;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	box-shadow: coral 3px 3px 5px;
+}
+
+.container {
+	margin: 0px 500px;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: coral 5px 5px 15px;
+}
+
+h2 {
+	text-align: center;
+	background-color: lightseagreen;
+	color: black;
+	border-radius: 10px;
+	margin: 0px;
+	padding: 10px 0px;
+}
+
+.specialty {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+}
+
+.card {
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: coral 3px 3px 5px;
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+}
+
+img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: coral 3px 3px 5px;
+	margin: 20px 700px;
+	padding: 20px 50px;
+}
+
+input {
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 100%;
+}
+
+select {
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 100%;
+}

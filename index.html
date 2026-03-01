@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="CSS/style.css" />
+	</head>
+	<body>
+		<!-- header start -->
+		<div class="header-container">
+			<div class="header">
+				<h1>Smart Hospital Management System</h1>
+				<p>Care & Health</p>
+			</div>
+			<div class="nav">
+				<p>Home</p>
+				<p>Doctors</p>
+				<p>Appointments</p>
+				<p>Contact</p>
+			</div>
+		</div>
+		<!-- header end -->
+
+		<br />
+		<br />
+
+		<!-- main start -->
+		<div class="container">
+			<h2>Book your appointment 👇</h2>
+		</div>
+		<br /><br />
+		<h3 style="text-align: center">Our Specialties</h3>
+		<br /><br />
+		<!-- card start -->
+		<div class="specialties">
+			<div class="specialty">
+				<div class="card">
+					<img
+						src="https://th.bing.com/th/id/OIP.T1u6Gr1XJVQYQ6sjfQMlcgHaHa?w=174&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+						alt="Cardiology" />
+					<h4>Cardiology</h4>
+					<p>Specialized in heart and cardiovascular care.</p>
+				</div>
+				<div class="card">
+					<img
+						src="https://tse2.mm.bing.net/th/id/OIP.LoqQ15EiLvHxNJVj_k8mXgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+						alt="Gastroenterologist" />
+					<h4>Gastroenterologist</h4>
+					<p>Specialized in digestive system disorders.</p>
+				</div>
+				<div class="card">
+					<img
+						src="https://th.bing.com/th/id/OIP.T1u6Gr1XJVQYQ6sjfQMlcgHaHa?w=174&h=180&c=7&r=0&o=7&pid=1.7&rm=3https://tse1.mm.bing.net/th/id/OIP.9iTosefgjxtAQClWLXOa1wHaHa?w=626&h=626&rs=1&pid=ImgDetMain&o=7&rm=3"
+						alt="General Practitioner" />
+					<h4>General Practitioner</h4>
+					<p>Provides comprehensive primary healthcare services.</p>
+				</div>
+				<div class="card">
+					<img
+						src="https://tse4.mm.bing.net/th/id/OIP.52uO_v664oDDwrKESGDaqAHaHa?pid=ImgDet&w=203&h=203&c=7&o=7&rm=3"
+						alt="Neurologist" />
+					<h4>Neurologist</h4>
+					<p>Specialized in brain and nervous system disorders.</p>
+				</div>
+				<div class="card">
+					<img
+						src="https://th.bing.com/th/id/OIP.T1u6Gr1XJVQYQ6sjfQMlcgHaHa?w=174&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+						alt="Dietitian" />
+					<h4>Dietitian</h4>
+					<p>
+						Specialized in nutritional counseling and dietary
+						planning.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- card end -->
+		<br /><br />
+		<h3 style="text-align: center">
+			For book appointment, Fill the form 👇
+		</h3>
+		<br /><br />
+		<!-- form start -->
+		<div class="form-container">
+			<div class="">
+				<label for="name">Enter Your Name 🧒</label>
+				<input type="text" id="name" required />
+			</div>
+			<div class="">
+				<label for="email">Enter Your Email 📩 </label>
+				<input type="email" id="email" required />
+			</div>
+			<div class="">
+				<label for="doctor" onchange="loadslot()">Select Doctor 👨‍⚕️</label>
+				<select
+					name=""
+					id="" required></select>
+			</div>
+			<div class="">
+				<label for=""></label>
+				<select
+					name=""
+					id="" required></select>
+			</div>
+			<div class="">
+				<label for=""></label>
+				<input
+                    type="date"
+					name=""
+					id="" required></input>
+			</div>
+		</div>
+		<br />
+		<br />
+		<!-- form end -->
+
+        <script>
+            // Doctor time slots
+const slots={
+"Dr. Amit Sharma":["10:00 AM","11:00 AM","12:00 PM"],
+"Dr. Priya Sen":["01:00 PM","02:00 PM","03:00 PM"],
+"Dr. Rahul Roy":["04:00 PM","05:00 PM"],
+"Dr. Neha Das":["10:00 AM","02:00 PM"],
+"Dr. Arjun Ghosh":["12:00 PM","03:00 PM","06:00 PM"]
+};
+
+function loadSlots(){
+const doctor=document.getElementById("doctor").value;
+const timeSelect=document.getElementById("time");
+timeSelect.innerHTML="";
+slots[doctor].forEach(t=>{
+let opt=document.createElement("option");
+opt.text=t;
+timeSelect.add(opt);
+});
+}// Doctor time slots
+const slots={
+"Dr. Amit Sharma":["10:00 AM","11:00 AM","12:00 PM"],
+"Dr. Priya Sen":["01:00 PM","02:00 PM","03:00 PM"],
+"Dr. Rahul Roy":["04:00 PM","05:00 PM"],
+"Dr. Neha Das":["10:00 AM","02:00 PM"],
+"Dr. Arjun Ghosh":["12:00 PM","03:00 PM","06:00 PM"]
+};
+
+function loadSlots(){
+const doctor=document.getElementById("doctor").value;
+const timeSelect=document.getElementById("time");
+timeSelect.innerHTML="";
+slots[doctor].forEach(t=>{
+let opt=document.createElement("option");
+opt.text=t;
+timeSelect.add(opt);
+});
+}
+        </script>
+	</body>
+</html>
