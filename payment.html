@@ -11,6 +11,78 @@
 			href="CSS/payment.css" />
 	</head>
 	<body>
-		<h1>Payment Page</h1>
+		<div class="container">
+			<div class="header">
+				<h1>Payment Page</h1>
+				<p>Complete your payment securely below:</p>
+			</div>
+			<div class="payment-form">
+				<div class="slip">
+					<div class="box">
+						<h3>Booking Details</h3>
+						<p><b>Patient:</b> Tamal Roy Chowdhury</p>
+						<p><b>Doctor:</b> Dr. John Doe</p>
+						<p><b>Email:</b> roytamal@gmail.com</p>
+						<p><b>Date:</b> 2024-06-15</p>
+						<p><b>Time:</b> 10:00 AM</p>
+					</div>
+					<hr />
+					<div class="box">
+						<h3>Consultation</h3>
+						<p>Consultation Fee: ₹500</p>
+						<p>Service charge: ₹100</p>
+						<p><b>Base Total:</b> ₹600</p>
+					</div>
+					<hr />
+					<div class="box">
+						<h3>Admission Details</h3>
+						<div class="field">
+							<label for="admission-type">Select Package:</label>
+							<select
+								name="admission-type"
+								id="admission-type">
+								<option value="">Select Admission Type</option>
+								<option value="general">General</option>
+								<option value="semi-private">
+									Semi-Private
+								</option>
+								<option value="private">Private</option>
+							</select>
+						</div>
+						<div class="field">
+							<label for="bed-type">Select Bed Type:</label>
+							<select
+								name="bed-type"
+								id="bed-type">
+								<option value="">Select Bed Type</option>
+								<option value="general">General</option>
+								<option value="semi-private">
+									Semi-Private
+								</option>
+								<option value="private">Private</option>
+							</select>
+						</div>
+						<p><b>Final Total:</b> ₹600</p>
+					</div>
+					<hr />
+					<div class="box">
+						<div class="qr">
+							<h2>Scan QR Code to Pay</h2>
+							<img
+								src="https://pngimg.com/d/qr_code_PNG33.png"
+								alt="QR Code" />
+						</div>
+					</div>
+				</div>
+				<div class="user">
+					<div class="user-details">
+						<h2>Patient credentials</h2>
+						<p>Your login ID: tamalrc</p>
+						<p>Your password: tamalrc44@</p>
+						<p>use this credentials in patient portal.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
