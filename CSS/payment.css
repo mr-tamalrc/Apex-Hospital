@@ -68,9 +68,17 @@
 .user {
 	background-color: #f9f9f9;
 	border: 1px solid #ccc;
-	width: 250px;
-	height: 200px;
-	padding: 20px 80px;
+	width: 210px;
+	height: 180px;
+	padding: 10px 80px;
 	border-radius: 8px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.highlight {
+	color: red;
+	font-weight: bold;
+}
+.light-text {
+	font-size: 0.9em;
+	color: #555;
 }
