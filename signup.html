@@ -5,7 +5,7 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<title>Login Page || PowSome Hospital</title>
+		<title>Sign Up Page || PowSome Hospital</title>
 		<link
 			rel="stylesheet"
 			href="CSS/style.css" />
@@ -38,9 +38,33 @@
 			<div class="login-container">
 				<div class="login-header">
 					<div class="hospital-name">PowSome Hospital</div>
-					<h1>Login</h1>
+					<h1>Sign Up</h1>
 				</div>
 				<form class="login-form">
+					<div class="field">
+						<label for="fullname">Full Name:</label>
+						<input
+							type="text"
+							id="fullname"
+							name="fullname"
+							required />
+					</div>
+					<div class="field">
+						<label for="email">Email:</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							required />
+					</div>
+					<div class="field">
+						<label for="phone">Phone Number:</label>
+						<input
+							type="tel"
+							id="phone"
+							name="phone"
+							required />
+					</div>
 					<div class="field">
 						<label for="username">Username:</label>
 						<input
@@ -57,21 +81,29 @@
 							name="password"
 							required />
 					</div>
+					<div class="field">
+						<label for="confirm-password">Confirm Password:</label>
+						<input
+							type="password"
+							id="confirm-password"
+							name="confirm-password"
+							required />
+					</div>
 					<button
 						type="button"
 						onclick="location.href = 'user.html'">
-						Login
+						Sign Up
 					</button>
 					<p style="text-align: center; margin-top: 15px">
-						Don't have an account?
+						Already have an account?
 						<a
-							href="signup.html"
+							href="login.html"
 							style="
 								color: cadetblue;
 								text-decoration: none;
 								cursor: pointer;
 							">
-							Sign up here
+							Login here
 						</a>
 					</p>
 				</form>
