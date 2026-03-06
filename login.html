@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -8,32 +8,61 @@
 		<title>Login Page || PowSome Hospital</title>
 		<link
 			rel="stylesheet"
+			href="CSS/style.css" />
+		<link
+			rel="stylesheet"
 			href="CSS/login.css" />
 	</head>
+
 	<body>
-		<div class="container">
+		<!-- header start -->
+		<div class="header-container">
 			<div class="header">
-				<div class="hospital-name">PowSome Hospital</div>
-				<h1>Login</h1>
+				<h1>PowSome Hospital Management System</h1>
+				<p>Providing quality healthcare services since 2020</p>
 			</div>
-			<div class="login-form">
-				<div class="field">
-					<label for="username">Username:</label>
-					<input
-						type="text"
-						id="username"
-						name="username"
-						required />
+			<div class="nav">
+				<p
+					onclick="location.href='index.html'"
+					style="cursor: pointer">
+					Home
+				</p>
+				<p>Doctors</p>
+				<p>Appointments</p>
+				<p>Contact</p>
+			</div>
+		</div>
+		<!-- header end -->
+
+		<div class="login-wrapper">
+			<div class="login-container">
+				<div class="login-header">
+					<div class="hospital-name">PowSome Hospital</div>
+					<h1>Login</h1>
 				</div>
-				<div class="field">
-					<label for="password">Password:</label>
-					<input
-						type="password"
-						id="password"
-						name="password"
-						required />
-				</div>
-				<button type="submit">Login</button>
+				<form class="login-form">
+					<div class="field">
+						<label for="username">Username:</label>
+						<input
+							type="text"
+							id="username"
+							name="username"
+							required />
+					</div>
+					<div class="field">
+						<label for="password">Password:</label>
+						<input
+							type="password"
+							id="password"
+							name="password"
+							required />
+					</div>
+					<button
+						type="button"
+						onclick="location.href='user.html'">
+						Login
+					</button>
+				</form>
 			</div>
 		</div>
 	</body>
