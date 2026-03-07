@@ -52,6 +52,10 @@ h2 {
 	padding: 20px;
 }
 
+.section-title {
+	text-align: center;
+}
+
 .card {
 	border: 1px solid black;
 	border-radius: 10px;
@@ -69,11 +73,12 @@ img {
 
 .form-container {
 	display: grid;
-	grid-template-columns: max-content;
+	grid-template-columns: 1fr;
 	border: 1px solid black;
 	border-radius: 10px;
 	box-shadow: coral 3px 3px 5px;
-	margin: 20px 450px;
+	max-width: 600px;
+	margin: 20px auto;
 	padding: 20px 40px;
 	gap: 15px;
 	position: relative;
@@ -127,4 +132,41 @@ select {
 	padding: 20px;
 	margin-top: 20px;
 	box-shadow: coral 3px 3px 6px 7px;
+}
+.button-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+.btn {
+	padding: 12px 24px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-login {
+	background-color: lightseagreen;
+	color: white;
+}
+
+.btn-login:hover {
+	background-color: seagreen;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-signup {
+	background-color: cadetblue;
+	color: white;
+}
+
+.btn-signup:hover {
+	background-color: darkcyan;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }

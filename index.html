@@ -30,23 +30,23 @@
 	<!-- main start -->
 	<div class="container">
 		<h2>Book your outdoor appointment 👇</h2>
-		<div style="text-align: center; margin-bottom: 20px;">
+		<div class="button-container">
 			<button 
 				type="button"
 				onclick="location.href='login.html'"
-				style="background-color: cadetblue; color: white; padding: 10px 20px; margin: 5px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+				class="btn btn-login">
 				Login
 			</button>
 			<button 
 				type="button"
 				onclick="location.href='signup.html'"
-				style="background-color: lightseagreen; color: white; padding: 10px 20px; margin: 5px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+				class="btn btn-signup">
 				Sign Up
 			</button>
 		</div>
 	</div>
 	<br />
-	<h3 style="text-align: center">Our Specialties</h3>
+	<h3 class="section-title">Our Specialties</h3>
 	<br />
 	<!-- card start -->
 	<div class="specialties">
@@ -162,7 +162,7 @@
 	</div>
 	<!-- card end -->
 	<br />
-	<h3 style="text-align: center">
+	<h3 class="section-title">
 		For book admission, Fill the form 👇
 	</h3>
 	<br />
@@ -188,14 +188,14 @@
 			</select>
 		</div>
 		<div class="field">
-			<label for="">Select Time</label>
+			<label for="time">Select Time</label>
 			<select id="time" required>
 				<option value="">Select Time</option>
 			</select>
 		</div>
 		<div class="field">
-			<label for=""></label>
-			<input type="date" name="" id="" required></input>
+			<label for="date">Select Date 📅</label>
+			<input type="date" id="date" required></input>
 		</div>
 		<br><br><br>
 		<div class="">
