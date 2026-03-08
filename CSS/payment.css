@@ -20,6 +20,8 @@ body {
 	background-color: cadetblue;
 	color: white;
 	padding: 20px;
+	margin: 0px 80px;
+	box-shadow: coral 3px 3px 5px;
 	border-radius: 8px;
 }
 
@@ -39,7 +41,7 @@ body {
 	width: 500px;
 	padding: 20px 80px;
 	border-radius: 8px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	box-shadow: coral 3px 3px 5px;
 }
 
 .field {
@@ -79,7 +81,7 @@ body {
 	height: 200px;
 	padding: 10px 80px;
 	border-radius: 8px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	box-shadow: coral 3px 3px 5px;
 }
 .highlight {
 	color: red;
