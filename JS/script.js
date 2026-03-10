@@ -65,20 +65,39 @@ if (window.location.pathname.includes("payment.html")) {
 	}
 
 	const baseAmount = 600;
-	const bedPrices = { general: 1000, "semi-private": 2000, private: 3000 };
+	const gstRate = 0.18;
+	const bedPrices = {
+		standard: 1000,
+		moderate: 2000,
+		premium: 3000,
+	};
+
+	let rooms = {
+		standard: 5,
+		moderate: 3,
+		premium: 2,
+	};
 
 	const packageSelect = document.getElementById("admission-type");
 	const bedSelect = document.getElementById("bed-type");
 
 	function calculateBill() {
+		const days = parseInt(daysSelect.value);
 		const bedType = bedSelect.value;
-		let admissionCost = bedType ? bedPrices[bedType] : 0;
+
+		if (!days || !bedType) return;
+
+		let admissionCost = days * bedPrices[bedType];
 		let total = baseAmount + admissionCost;
 
-		const totalDisplay = document.querySelector(".box p b");
-		if (totalDisplay) {
-			totalDisplay.parentElement.innerHTML = `<b>Final Total:</b> ₹${total}`;
+		const gst = total * gstRate;
+		total += gst;
+
+		if (days >= 20) {
+			total -= total * 0.05;
 		}
+
+		document.getElementById("finalTotal").innerText = total.toFixed(2);
 
 		const upiLink = `upi://pay?pa=hospital@upi&pn=ApexHospital&am=${total}&cu=INR`;
 		const qrImg = document.querySelector(".qr img");

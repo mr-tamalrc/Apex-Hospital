@@ -87,6 +87,11 @@ body {
 	color: red;
 	font-weight: bold;
 }
+
+.highlight-green {
+	color: green;
+	font-weight: bold;
+}
 .light-text {
 	font-size: 0.9em;
 	color: #555;

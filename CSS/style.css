@@ -127,7 +127,7 @@ select {
 	box-shadow: coral 2px 2px 5px;
 	width: 85%;
 	position: absolute;
-	bottom: 30px;
+	bottom: 5px;
 	left: 50%;
 	transform: translateX(-50%);
 }
