@@ -18,10 +18,14 @@
 			<p>Providing quality healthcare services since 2020</p>
 		</div>
 		<div class="nav">
-			<p>Home</p>
-			<p>Doctors</p>
-			<p>Appointments</p>
-			<p>Contact</p>
+			<p onclick="location.href = 'index.html'"
+					style="cursor: pointer">Home</p>
+			<p onclick="location.href = 'index.html#doctors'"
+					style="cursor: pointer">Doctors</p>
+			<p onclick="location.href = 'index.html#admission-form'"
+					style="cursor: pointer">Appointments</p>
+			<p onclick="location.href = 'index.html#contacts'"
+					style="cursor: pointer">Contact</p>
 		</div>
 	</div>
 	<!-- header end -->
@@ -46,7 +50,7 @@
 	<br />
 	<!-- card start -->
 	<div class="specialties">
-		<div class="specialty">
+		<div class="specialty" id="doctors">
 			<div class="card">
 				<img src="https://th.bing.com/th/id/OIP.T1u6Gr1XJVQYQ6sjfQMlcgHaHa?w=174&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
 					alt="Cardiology" />
@@ -214,7 +218,7 @@
 	<!-- form end -->
 
 	<!-- footer start -->
-	<div class="footer">
+	<div class="footer" id="contacts">
 		<h3>Contact Us</h3>
 		<p>123 Medical Avenue, Health City</p>
 		<p>Email: contact@apexhospital.com</p>
